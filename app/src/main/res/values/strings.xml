@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ImplicitIntents</string>
+    <string name="google_address_site">https://www.google.co.il/</string>
+    <string name="sport5_address_site">http://m.sport5.co.il</string>
+    <string name="ness_college_addres_site">https://www.ness-college.co.il/</string>
+    <string name="android_developer_guide_address_site">https://developer.android.com/guide/index.html</string>
+    <string name="ynet_address_site">http://m.ynet.co.il/8</string>
+    <string name="karate_IOGKF_address_site">http://www.karateisrael.co.il/</string>
+    <string name="unexpected_button_id">Unexpected button id</string>
+    <string name="must_tap_text">You need to tap the text for search  at Edit Text rectangle</string>
+    <string name="google_search_address_site">https://www.google.co.il/search?q=</string>
 </resources>

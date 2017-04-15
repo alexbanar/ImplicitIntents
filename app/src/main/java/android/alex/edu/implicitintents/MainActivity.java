@@ -31,25 +31,25 @@ public class MainActivity extends AppCompatActivity {
         switch(((Button)view).getId())
         {
             case R.id.btnGoogle:
-                address = Uri.parse("https://www.google.co.il/");
+                address = Uri.parse(getString(R.string.google_address_site));
                 break;
             case R.id.btnSport5:
-                address = Uri.parse("http://www.sport5.co.il/");
+                address = Uri.parse(getString(R.string.sport5_address_site));
                 break;
             case R.id.btnNess:
-                address =  Uri.parse("https://www.ness-college.co.il/");
+                address =  Uri.parse(getString(R.string.ness_college_addres_site));
                 break;
             case R.id.btnAndroid:
-                address = Uri.parse("https://developer.android.com/guide/index.html");
+                address = Uri.parse(getString(R.string.android_developer_guide_address_site));
                 break;
             case R.id.btnYnet:
-                address = Uri.parse("http://www.ynet.co.il/home/0,7340,L-8,00.html");
+                address = Uri.parse(getString(R.string.ynet_address_site));
                 break;
             case R.id.btnKarate:
-                address = Uri.parse("http://www.karateisrael.co.il/");
+                address = Uri.parse(getString(R.string.karate_IOGKF_address_site));
                 break;
             default:
-                throw new RuntimeException("Unexpected button id");
+                throw new RuntimeException(getString(R.string.unexpected_button_id));
         }
 
         Intent webIntent = new Intent(Intent.ACTION_VIEW, address);
@@ -66,12 +66,12 @@ public class MainActivity extends AppCompatActivity {
         String editTextString = editTextGoogleSearch.getText().toString();
         if(editTextString.equals("") || editTextString.trim().equals(""))
         {
-            Toast.makeText(this, "You need to tap the text for search \nat Edit Text rectangular", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.must_tap_text, Toast.LENGTH_SHORT).show();
             return;
         }
         else
         {
-            address = Uri.parse("https://www.google.co.il/search?q=" + editTextString);
+            address = Uri.parse(getString(R.string.google_search_address_site) + editTextString);
             Intent webIntent = new Intent(Intent.ACTION_VIEW, address);
 
             if(canOpen(webIntent))
