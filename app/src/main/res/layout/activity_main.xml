@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.alex.edu.implicitintents.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@mipmap/ic_launcher_google"
+        android:onClick="website"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSport5"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnSport5"
+        app:layout_constraintTop_toTopOf="@+id/btnSport5" />
+
+    <Button
+        android:id="@+id/btnSport5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher_sport5"
+        android:onClick="website"
+        app:layout_constraintTop_toTopOf="@+id/btnNess"
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toLeftOf="@+id/btnNess"
+        app:layout_constraintDimensionRatio="h,1:1"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNess"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnNess"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher_ness"
+        android:onClick="website"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintDimensionRatio="h,1:1"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher_android"
+        android:onClick="website"
+        app:layout_constraintBottom_toBottomOf="@+id/btnYnet"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintTop_toTopOf="@+id/btnYnet"
+        android:layout_marginTop="0dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnGoogle"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/btnGoogle" />
+
+    <Button
+        android:id="@+id/btnYnet"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher_ynet"
+        android:onClick="website"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintTop_toTopOf="@+id/btnKarate"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnSport5"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/btnSport5"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnKarate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher_karate"
+        android:onClick="website"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnNess"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/btnNess"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintDimensionRatio="h,1:1"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnNess" />
+
+    <EditText
+        android:id="@+id/etGoogleSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Google Search"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYnet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="Google Search"
+        android:textAllCaps="false"
+        android:onClick="googleSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/etGoogleSearch"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/etGoogleSearch"
+        app:layout_constraintHorizontal_bias="0.504"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/etGoogleSearch" />
+</android.support.constraint.ConstraintLayout>
